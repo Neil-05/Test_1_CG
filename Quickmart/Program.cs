@@ -17,6 +17,14 @@
                     Create create = new Create();
                     lasttransaction = create.GetDetails();
                     Console.WriteLine("Transaction created successfully.");
+                    if(lasttransaction != null){
+                        calculate calc = new calculate(lasttransaction.InvoiceNo, lasttransaction.CustomerName,
+                                                       lasttransaction.ItemName, lasttransaction.Quantity,
+                                                       lasttransaction.PurchaseAmount, lasttransaction.SellingAmount);
+                        calc.CalculateProfitOrLoss();
+                    } else {
+                        Console.WriteLine("No transaction available. Please create a new transaction first.");
+                    }
                 }
 
 
@@ -26,6 +34,14 @@
                                             lasttransaction.ItemName, lasttransaction.Quantity,
                                             lasttransaction.PurchaseAmount, lasttransaction.SellingAmount);
                         view.DisplayDetails();
+                        if(lasttransaction != null){
+                        calculate calc = new calculate(lasttransaction.InvoiceNo, lasttransaction.CustomerName,
+                                                       lasttransaction.ItemName, lasttransaction.Quantity,
+                                                       lasttransaction.PurchaseAmount, lasttransaction.SellingAmount);
+                        calc.CalculateProfitOrLoss();
+                    } else {
+                        Console.WriteLine("No transaction available. Please create a new transaction first.");
+                    }
                     } else {
                         Console.WriteLine("No transaction available. Please create a new transaction first.");
                     }
