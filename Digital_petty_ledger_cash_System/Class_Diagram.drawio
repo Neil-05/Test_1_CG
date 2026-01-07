@@ -1,0 +1,96 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.10">
+  <diagram name="Page-1" id="DBSHuQd9fHdVhyOMU047">
+    <mxGraphModel dx="1803" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="islQQD_58J0_xlkgwC-0-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Transaction" vertex="1">
+          <mxGeometry height="200" width="200" x="-70" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-2" parent="islQQD_58J0_xlkgwC-0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- ID : int&lt;div&gt;&lt;br&gt;&lt;div&gt;- Date : DateTime&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Amount : decimal&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Description : string&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="110" x="40" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-4" parent="islQQD_58J0_xlkgwC-0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="+ GetSummary() : string" vertex="1">
+          <mxGeometry height="30" width="200" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-3" edge="1" parent="islQQD_58J0_xlkgwC-0-1" source="islQQD_58J0_xlkgwC-0-4" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="islQQD_58J0_xlkgwC-0-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="360" y="200" as="sourcePoint" />
+            <mxPoint x="560" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-25" edge="1" parent="1" source="islQQD_58J0_xlkgwC-0-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="islQQD_58J0_xlkgwC-0-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-5" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="IReportable" vertex="1">
+          <mxGeometry height="60" width="200" x="-70" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-7" parent="islQQD_58J0_xlkgwC-0-5" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="+ GetSummary() : string" vertex="1">
+          <mxGeometry height="30" width="200" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-8" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="ExpenseTransaction" vertex="1">
+          <mxGeometry height="90" width="200" x="-300" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-9" parent="islQQD_58J0_xlkgwC-0-8" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- Category : string" vertex="1">
+          <mxGeometry height="30" width="200" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-14" parent="islQQD_58J0_xlkgwC-0-8" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="+ GetSummary() : string" vertex="1">
+          <mxGeometry height="30" width="200" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-15" edge="1" parent="islQQD_58J0_xlkgwC-0-8" source="islQQD_58J0_xlkgwC-0-14" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="islQQD_58J0_xlkgwC-0-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="90" as="sourcePoint" />
+            <mxPoint x="350" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-16" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="IncomeTransaction" vertex="1">
+          <mxGeometry height="90" width="200" x="160" y="440" as="geometry">
+            <mxRectangle height="30" width="140" x="10" y="280" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-17" parent="islQQD_58J0_xlkgwC-0-16" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- Source : string" vertex="1">
+          <mxGeometry height="30" width="200" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-18" parent="islQQD_58J0_xlkgwC-0-16" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="+ GetSummary() : string" vertex="1">
+          <mxGeometry height="30" width="200" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-19" edge="1" parent="islQQD_58J0_xlkgwC-0-16" source="islQQD_58J0_xlkgwC-0-18" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="islQQD_58J0_xlkgwC-0-18" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="90" as="sourcePoint" />
+            <mxPoint x="350" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-20" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Ledger&amp;lt;T&amp;gt;" vertex="1">
+          <mxGeometry height="220" width="200" x="-70" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-21" parent="islQQD_58J0_xlkgwC-0-20" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- entries : List&amp;lt;T&amp;gt;" vertex="1">
+          <mxGeometry height="30" width="200" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-22" parent="islQQD_58J0_xlkgwC-0-20" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="+ AddEntry(entry : T) : void&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ GetTransactionsByDate(date) : List&amp;lt;T&amp;gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ CalculateTotal() : decimal&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ GetAll() : List&amp;lt;T&amp;gt;&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-24" edge="1" parent="1" source="islQQD_58J0_xlkgwC-0-20" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" target="islQQD_58J0_xlkgwC-0-20" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-100" y="520" as="sourcePoint" />
+            <mxPoint x="100" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-26" edge="1" parent="1" source="islQQD_58J0_xlkgwC-0-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="islQQD_58J0_xlkgwC-0-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="30" y="400" />
+              <mxPoint x="260" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-27" edge="1" parent="1" source="islQQD_58J0_xlkgwC-0-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="islQQD_58J0_xlkgwC-0-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="islQQD_58J0_xlkgwC-0-28" edge="1" parent="1" source="islQQD_58J0_xlkgwC-0-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="islQQD_58J0_xlkgwC-0-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
